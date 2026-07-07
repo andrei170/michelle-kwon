@@ -111,6 +111,21 @@
   .optin-ok h3{margin:8px 0 4px}.optin-ok p{margin:0}
   @media(max-width:900px){.hero{min-height:auto}.hero-grid{grid-template-columns:1fr;gap:34px}.hero h1{max-width:none}}
 
+  /* Hero media (VSL placeholder + her photos) */
+  .hero-media{display:flex;flex-direction:column;gap:12px;animation:up .8s .42s both}
+  .vsl-card{position:relative;aspect-ratio:16/10;border-radius:18px;overflow:hidden;box-shadow:var(--sh3);cursor:pointer;border:1px solid rgba(255,255,255,.14)}
+  .vsl-card img{width:100%;height:100%;object-fit:cover;object-position:center 28%;transition:transform .5s var(--ease)}
+  .vsl-card:hover img{transform:scale(1.05)}
+  .vsl-card .ov{position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,14,22,.68),rgba(20,14,22,.12))}
+  .vsl-card .play{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;z-index:2}
+  .vsl-card .play .circle{width:70px;height:70px;border-radius:50%;background:var(--accent);display:grid;place-items:center;font-size:2rem;box-shadow:0 12px 34px rgba(196,125,132,.55);transition:.25s}
+  .vsl-card:hover .play .circle{transform:scale(1.08);background:var(--accent2)}
+  .vsl-card .play .t{margin-top:12px;font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+  .vsl-card .slot{position:absolute;top:12px;left:12px;z-index:3;background:rgba(0,0,0,.42);backdrop-filter:blur(6px);border:1px dashed rgba(255,255,255,.4);color:#f0e6ea;font-size:.68rem;padding:5px 10px;border-radius:30px;display:inline-flex;align-items:center;gap:6px}
+  .vsl-card .slot iconify-icon{color:var(--gold-soft)}
+  .hero-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .hero-thumbs img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 22%;border-radius:14px;border:1px solid rgba(255,255,255,.14);box-shadow:var(--sh2)}
+
   /* Service strip */
   .svc{background:linear-gradient(180deg,#fff,var(--paper));border-bottom:1px solid var(--line)}
   .svc .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:30px 28px}
@@ -292,35 +307,40 @@
 </nav>
 
 <!-- Hero -->
-<header class="hero" id="get">
-  <div class="hero-slides"><div class="hero-slide s1"></div><div class="hero-slide s2"></div><div class="hero-slide s3"></div></div>
-  <div class="hero-scrim"></div>
+<header class="hero" id="get" style="background:radial-gradient(120% 90% at 16% 6%,rgba(196,125,132,.26),transparent 55%),linear-gradient(160deg,#241b2a,#2b2230)">
   <div class="wrap">
     <div class="hero-grid">
       <div>
         <div class="est-tag"><iconify-icon icon="mdi:heart"></iconify-icon> Trusted by a 219K+ community</div>
         <h1>Walk into the gym <em>like you own it.</em></h1>
         <p class="hero-sub">The free starter guide from the coach 219K girls follow for beginner-friendly, lower-body focused training. Feel confident lifting, no guesswork, no intimidation. <b>Your first real workouts, done for you.</b></p>
-        <div class="hero-strip">
-          <div class="hs"><b>219K</b><span>Girls in the<br>community</span></div>
-          <div class="hs"><iconify-icon icon="mdi:map-marker-outline"></iconify-icon><span>Toronto x Van<br>x Seoul</span></div>
-          <div class="hs"><iconify-icon icon="mdi:check-decagram-outline"></iconify-icon><span>Total beginner<br>friendly</span></div>
+        <div class="optin" id="optin-card" style="margin-top:30px">
+          <form id="optinForm" onsubmit="return submitOptin(event)">
+            <div class="tag"><iconify-icon icon="mdi:download"></iconify-icon> Free download</div>
+            <h3>Send me the free Confident in the Gym guide</h3>
+            <p>Your first beginner workouts, what to do, how to do it, and how to stop feeling lost the second you walk in.</p>
+            <div class="field"><input type="text" required placeholder="First name" aria-label="First name"></div>
+            <div class="field"><input type="email" required placeholder="Your best email" aria-label="Email"></div>
+            <button class="btn" type="submit"><iconify-icon icon="mdi:email-fast-outline"></iconify-icon> Send me the guide</button>
+            <p class="fine"><iconify-icon icon="mdi:lock-outline"></iconify-icon> No spam, ever. Unsubscribe anytime.</p>
+          </form>
+          <div class="optin-ok" id="optinOk">
+            <iconify-icon icon="mdi:check-circle"></iconify-icon>
+            <h3>You're in!</h3>
+            <p>This is a demo. On the live page your guide lands in the inbox you entered, right away.</p>
+          </div>
         </div>
       </div>
-      <div class="optin" id="optin-card">
-        <form id="optinForm" onsubmit="return submitOptin(event)">
-          <div class="tag"><iconify-icon icon="mdi:download"></iconify-icon> Free download</div>
-          <h3>Send me the free<br>Confident in the Gym guide</h3>
-          <p>Your first beginner workouts, what to do, how to do it, and how to stop feeling lost the second you walk in.</p>
-          <div class="field"><input type="text" required placeholder="First name" aria-label="First name"></div>
-          <div class="field"><input type="email" required placeholder="Your best email" aria-label="Email"></div>
-          <button class="btn" type="submit"><iconify-icon icon="mdi:email-fast-outline"></iconify-icon> Send me the guide</button>
-          <p class="fine"><iconify-icon icon="mdi:lock-outline"></iconify-icon> No spam, ever. Unsubscribe anytime.</p>
-        </form>
-        <div class="optin-ok" id="optinOk">
-          <iconify-icon icon="mdi:check-circle"></iconify-icon>
-          <h3>You're in!</h3>
-          <p>This is a demo. On the live page your guide lands in the inbox you entered, right away.</p>
+      <div class="hero-media">
+        <div class="vsl-card" onclick="location.href='vsl.html'" role="button" aria-label="Watch the free training">
+          <img src="michelle-gym.jpg" alt="Michelle Kwon training in the gym" decoding="async">
+          <div class="ov"></div>
+          <div class="slot"><iconify-icon icon="mdi:video-outline"></iconify-icon> VSL video embeds here</div>
+          <div class="play"><div class="circle"><iconify-icon icon="mdi:play"></iconify-icon></div><div class="t">Watch the free training</div></div>
+        </div>
+        <div class="hero-thumbs">
+          <img src="michelle-portrait.jpg" alt="Michelle Kwon" loading="lazy" decoding="async">
+          <img src="michelle.png" alt="Michelle Kwon" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
