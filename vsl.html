@@ -126,6 +126,19 @@
   .gslot iconify-icon{font-size:1.5rem;color:var(--gold-soft);margin-bottom:6px}
   @media(max-width:640px){.gallery{grid-template-columns:1fr 1fr}}
 
+  /* Testimonials */
+  .tmony-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+  .tcard{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 26px;box-shadow:var(--sh1);display:flex;flex-direction:column;transition:.25s}
+  .tcard:hover{transform:translateY(-3px);box-shadow:var(--sh2)}
+  .tcard .samp{position:absolute;top:14px;right:14px;font-size:.58rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted2);background:var(--sand);border:1px dashed var(--line);border-radius:20px;padding:3px 9px}
+  .tcard .stars{display:inline-flex;gap:2px;color:var(--gold);font-size:1rem;margin-bottom:14px}
+  .tcard p{font-size:1rem;color:#40352f;flex:1;margin-bottom:16px;line-height:1.55}
+  .tcard .who{display:flex;align-items:center;gap:12px}
+  .tcard .av{width:40px;height:40px;border-radius:50%;background:var(--sand);border:1px solid var(--line);color:var(--accent2);display:grid;place-items:center;font-weight:700;font-family:'Fraunces',serif}
+  .tcard .who b{display:block;font-size:.92rem;color:var(--ink)}
+  .tcard .who span{font-size:.8rem;color:var(--muted)}
+  @media(max-width:760px){.tmony-grid{grid-template-columns:1fr}}
+
   /* FAQ */
   .faq{max-width:760px;margin:36px auto 0}
   .faq-item{border-bottom:1px solid var(--line)}
@@ -300,10 +313,27 @@
       <p class="lead" style="margin:14px auto 0;max-width:52ch">Training, coaching and everyday, the real Michelle behind the coaching.</p>
     </div>
     <div class="gallery" style="grid-template-columns:repeat(3,1fr)">
-      <img class="rv" src="michelle-portrait.jpg" alt="Michelle Kwon" loading="lazy" decoding="async" style="width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 15%;border-radius:14px;box-shadow:var(--sh1)">
-      <img class="rv" src="michelle-gym.jpg" alt="Michelle training in the gym" loading="lazy" decoding="async" style="width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 24%;border-radius:14px;box-shadow:var(--sh1)">
-      <img class="rv" src="michelle.png" alt="Michelle Kwon" loading="lazy" decoding="async" style="width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 20%;border-radius:14px;box-shadow:var(--sh1)">
+      <img class="rv" src="michelle-portrait.jpg" alt="Michelle Kwon" loading="lazy" decoding="async" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 16%;border-radius:16px;box-shadow:var(--sh1)">
+      <img class="rv" src="michelle-gym.jpg" alt="Michelle training in the gym" loading="lazy" decoding="async" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 32%;border-radius:16px;box-shadow:var(--sh1)">
+      <img class="rv" src="michelle.png" alt="Michelle Kwon" loading="lazy" decoding="async" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 24%;border-radius:16px;box-shadow:var(--sh1)">
     </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section>
+  <div class="wrap">
+    <div class="cen">
+      <div class="eyebrow cen">Client love</div>
+      <h2>What girls say <em>after training with me.</em></h2>
+      <p class="lead" style="margin:14px auto 0;max-width:54ch">Placeholder testimonials, ready to swap for your real client wins.</p>
+    </div>
+    <div class="tmony-grid">
+      <div class="tcard rv"><span class="samp">Sample</span><div class="stars"><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon></div><p>I went from dreading the gym to actually looking forward to it. Michelle made it feel doable, not scary at all.</p><div class="who"><div class="av">A</div><div><b>Client name</b><span>New to lifting</span></div></div></div>
+      <div class="tcard rv"><span class="samp">Sample</span><div class="stars"><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon></div><p>She built everything around my schedule and actually kept me accountable. First time I have ever stuck with a program.</p><div class="who"><div class="av">J</div><div><b>Client name</b><span>1:1 coaching</span></div></div></div>
+      <div class="tcard rv"><span class="samp">Sample</span><div class="stars"><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon></div><p>So much more confident in the weights section now. Honestly wish I had started with her sooner.</p><div class="who"><div class="av">S</div><div><b>Client name</b><span>A few months in</span></div></div></div>
+    </div>
+    <p class="tf-note" style="justify-content:center"><iconify-icon icon="mdi:swap-horizontal"></iconify-icon> Placeholder testimonials. Swap for real client quotes and wins on launch.</p>
   </div>
 </section>
 
