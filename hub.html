@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Built for Michelle Kwon | AG1 Consulting</title>
+<meta name="description" content="A custom growth plan built for Michelle Kwon by AG1: turn a 219K audience capped by 1:1 coaching into a scalable funnel and offer.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23000'/%3E%3Ctext x='50' y='68' font-family='Inter,Arial,sans-serif' font-size='46' font-weight='bold' fill='%23c9973a' text-anchor='middle'%3EAG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+<style>
+  :root{
+    --bg:#050506; --bg2:#0b0b0e; --panel:rgba(255,255,255,.04); --panel-2:rgba(255,255,255,.06); --brd:rgba(255,255,255,.1); --brd-2:rgba(201,151,58,.35);
+    --txt:#f4f1ea; --dim:#a6a29a; --faint:#6f6b63;
+    --gold:#c9973a; --gold-2:#e6c073; --gold-deep:#9a7223;
+    --grad:linear-gradient(120deg,#e6c073,#c9973a 55%,#a87d28);
+    --good:#5fbf7e;
+    --ease:cubic-bezier(.2,.7,.2,1);
+    --maxw:1080px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  ::selection{background:var(--gold);color:#120d02}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:var(--txt);background:var(--bg);line-height:1.6;font-size:16.5px;-webkit-font-smoothing:antialiased;overflow-x:hidden;position:relative}
+  body::before{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.5;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+  h1,h2,h3,h4{font-weight:800;line-height:1.06;letter-spacing:-.03em;color:var(--txt)}
+  h1{font-size:clamp(2.3rem,5.4vw,4rem);letter-spacing:-.04em;line-height:1}
+  h2{font-size:clamp(1.7rem,3.4vw,2.6rem);letter-spacing:-.035em}
+  h3{font-size:1.18rem;letter-spacing:-.02em;font-weight:700}
+  p{margin-bottom:1rem;color:var(--dim);text-wrap:pretty}
+  a{color:var(--gold-2);text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px;position:relative;z-index:2}
+  section{padding:80px 0;position:relative;z-index:2}
+  iconify-icon{display:inline-block;width:1em;height:1em;vertical-align:-.135em}
+  .grad-txt{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+  .serif{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.01em}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-weight:600;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;color:var(--gold-2);margin-bottom:18px}
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--gold)}
+  .eyebrow.cen{justify-content:center}.eyebrow.cen::before{display:none}
+  .lead{font-size:1.12rem;color:var(--dim);line-height:1.7}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--grad);color:#140d01;font-weight:700;font-size:1rem;padding:15px 30px;border-radius:11px;border:none;cursor:pointer;transition:.22s var(--ease);box-shadow:0 10px 34px rgba(201,151,58,.3)}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 16px 46px rgba(201,151,58,.44);filter:brightness(1.06)}
+  .btn iconify-icon{transition:transform .2s}.btn:hover iconify-icon{transform:translateX(3px)}
+  .btn-glass{background:var(--panel-2);color:var(--txt);border:1px solid var(--brd);box-shadow:none;backdrop-filter:blur(8px)}
+  .btn-glass:hover{background:rgba(255,255,255,.1);box-shadow:none;filter:none}
+
+  .aurora{position:absolute;inset:0;overflow:hidden;z-index:0;pointer-events:none}
+  .aurora .b{position:absolute;border-radius:50%;filter:blur(100px);opacity:.4}
+  .aurora .b1{width:560px;height:560px;background:radial-gradient(circle,rgba(201,151,58,.5),transparent 62%);top:-200px;left:-120px}
+  .aurora .b2{width:460px;height:460px;background:radial-gradient(circle,rgba(230,192,115,.28),transparent 62%);top:-100px;right:-100px}
+
+  .head{border-bottom:1px solid var(--brd);position:relative;overflow:hidden}
+  .head .wrap{padding-top:56px;padding-bottom:56px}
+  .badge-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+  .logo{display:inline-flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em}
+  .logo .mk{width:34px;height:34px;border-radius:9px;background:var(--grad);display:grid;place-items:center;color:#140d01;font-weight:900;font-size:.95rem}
+  .logo small{color:var(--faint);font-weight:500;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase}
+  .x{color:var(--faint);font-size:1.1rem}
+  .for-badge{display:inline-flex;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--brd);border-radius:40px;padding:7px 15px;font-size:.78rem;color:var(--dim)}
+  .for-badge b{color:var(--txt)}
+  .head h1{max-width:20ch;margin-top:6px}
+  .head p{font-size:1.14rem;max-width:56ch;margin-top:18px}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:38px}
+  .stat{background:var(--panel);border:1px solid var(--brd);border-radius:16px;padding:22px 20px;backdrop-filter:blur(8px)}
+  .stat .n{font-size:1.9rem;font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:6px}
+  .stat .l{font-size:.82rem;color:var(--dim)}
+  @media(max-width:720px){.stats{grid-template-columns:1fr 1fr}}
+
+  .card{background:var(--panel);border:1px solid var(--brd);border-radius:18px;padding:30px;backdrop-filter:blur(8px)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:34px}
+  .gap-card{background:var(--panel);border:1px solid var(--brd);border-radius:18px;padding:30px}
+  .gap-card.now{opacity:.92}
+  .gap-card .lbl{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;display:inline-flex;align-items:center;gap:8px}
+  .gap-card.now .lbl{color:var(--faint)}.gap-card.next .lbl{color:var(--gold-2)}
+  .gap-card.next{border-color:var(--brd-2)}
+  .gap-card ul{list-style:none}
+  .gap-card li{padding:8px 0 8px 26px;position:relative;font-size:.95rem;color:var(--dim)}
+  .gap-card li iconify-icon{position:absolute;left:0;top:10px;font-size:1rem}
+  .now li iconify-icon{color:var(--faint)}.next li iconify-icon{color:var(--good)}
+  @media(max-width:720px){.split{grid-template-columns:1fr}}
+
+  /* Money picture */
+  .money{background:var(--bg2)}
+  .math{background:linear-gradient(160deg,#12100b,#0a0a0c);border:1px solid var(--brd-2);border-radius:20px;padding:34px;margin-top:30px}
+  .math .row{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid var(--brd)}
+  .math .row:last-child{border-bottom:none}
+  .math .row .ic{width:44px;height:44px;border-radius:12px;background:rgba(201,151,58,.12);border:1px solid var(--brd-2);display:grid;place-items:center;font-size:1.3rem;color:var(--gold-2);flex:none}
+  .math .row b{color:var(--txt);font-weight:700;display:block;font-size:1.02rem}
+  .math .row span{font-size:.92rem;color:var(--dim)}
+  .math .row .val{margin-left:auto;font-weight:800;font-size:1.15rem;letter-spacing:-.02em;color:var(--gold-2);text-align:right;flex:none}
+  .disclaim-inline{font-size:.8rem;color:var(--faint);margin-top:16px}
+
+  /* Funnel steps */
+  .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}
+  .fstep{background:var(--panel);border:1px solid var(--brd);border-radius:16px;padding:24px 18px;backdrop-filter:blur(8px);position:relative;transition:.25s}
+  .fstep:hover{border-color:var(--brd-2);transform:translateY(-3px)}
+  .fstep .ic{width:44px;height:44px;border-radius:12px;background:rgba(201,151,58,.1);border:1px solid var(--brd-2);display:grid;place-items:center;font-size:1.3rem;color:var(--gold-2);margin-bottom:14px}
+  .fstep b{display:block;font-size:1rem;color:var(--txt);margin-bottom:4px}
+  .fstep p{margin:0;font-size:.86rem;color:var(--dim)}
+  @media(max-width:760px){.flow{grid-template-columns:1fr 1fr}}
+  @media(max-width:440px){.flow{grid-template-columns:1fr}}
+
+  /* Build list */
+  .build{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+  .bcard{background:var(--panel);border:1px solid var(--brd);border-radius:16px;padding:26px;backdrop-filter:blur(8px);transition:.25s}
+  .bcard:hover{border-color:var(--brd-2);transform:translateY(-3px)}
+  .bcard iconify-icon{font-size:1.6rem;color:var(--gold-2);margin-bottom:12px}
+  .bcard h3{margin-bottom:6px}
+  .bcard p{margin:0;font-size:.9rem;color:var(--dim)}
+  @media(max-width:820px){.build{grid-template-columns:1fr}}
+
+  /* Preview */
+  .preview{background:linear-gradient(160deg,#12100b,#0a0a0c);border:1px solid var(--brd-2);border-radius:20px;padding:34px;margin-top:30px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+  .preview .frame{border:1px solid var(--brd);border-radius:14px;overflow:hidden;background:#faf5f3;aspect-ratio:16/10;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .preview .frame .bar{height:26px;background:#eadfdc;display:flex;align-items:center;gap:5px;padding:0 10px}
+  .preview .frame .bar i{width:8px;height:8px;border-radius:50%;background:#c9b3ad;display:block}
+  .preview .frame .body{padding:22px;color:#2b2230}
+  .preview .frame .body .h{font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;color:#2b2230;line-height:1.1}
+  .preview .frame .body .s{font-size:.7rem;color:#6d5f66;margin-top:6px}
+  .preview .frame .body .btn-m{display:inline-block;margin-top:12px;background:#c47d84;color:#fff;font-size:.62rem;font-weight:700;padding:6px 12px;border-radius:6px}
+  .preview .frame .body .ln{height:6px;border-radius:4px;background:#eadfdc;margin-top:14px}.preview .frame .body .ln.s{width:60%}
+  .preview h3{font-size:1.3rem;margin-bottom:8px}
+  @media(max-width:720px){.preview{grid-template-columns:1fr}}
+
+  /* Process */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}
+  .pstep{background:var(--panel);border:1px solid var(--brd);border-radius:16px;padding:24px;backdrop-filter:blur(8px)}
+  .pstep .n{font-family:'Fraunces',serif;font-size:1.6rem;color:var(--gold-2);font-weight:700;line-height:1;margin-bottom:10px}
+  .pstep h3{font-size:1.02rem;margin-bottom:4px}
+  .pstep p{margin:0;font-size:.86rem;color:var(--dim)}
+  @media(max-width:760px){.steps{grid-template-columns:1fr 1fr}}
+
+  .final{text-align:center;position:relative;overflow:hidden}
+  .final .glow{position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(201,151,58,.2),transparent 55%);z-index:0}
+  .final .wrap{position:relative;z-index:2}
+  .final h2{max-width:20ch;margin:0 auto}
+  .final p{max-width:52ch;margin:16px auto 26px;font-size:1.08rem}
+
+  footer{border-top:1px solid var(--brd);padding:44px 0 30px}
+  .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center;font-size:.85rem;color:var(--faint)}
+  .disclaimer{max-width:var(--maxw);margin:16px auto 0;padding:0 26px;font-size:.73rem;color:#5b574f;line-height:1.6;position:relative;z-index:2}
+
+  .rv{opacity:0;transform:translateY(24px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+  .rv.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="head">
+  <div class="aurora"><div class="b b1"></div><div class="b b2"></div></div>
+  <div class="wrap">
+    <div class="badge-row">
+      <span class="logo"><span class="mk">AG</span> AG1 Consulting <small>Growth &amp; Funnels</small></span>
+      <span class="x">&times;</span>
+      <span class="for-badge"><iconify-icon icon="mdi:account-heart-outline"></iconify-icon> Built for <b>Michelle Kwon</b></span>
+    </div>
+    <div class="eyebrow">A custom growth plan</div>
+    <h1>You built the audience. <span class="grad-txt serif">Let's uncap the revenue.</span></h1>
+    <p class="lead">219K girls trust you, but the whole thing runs through 1:1 coaching, which is capped by your calendar. This is the plan to turn that same audience into a scalable funnel and offer, without losing what makes it yours.</p>
+    <div class="stats">
+      <div class="stat"><div class="n grad-txt">219K+</div><div class="l">Audience, one platform</div></div>
+      <div class="stat"><div class="n grad-txt">3</div><div class="l">Platforms already built</div></div>
+      <div class="stat"><div class="n grad-txt">1:1</div><div class="l">The current ceiling</div></div>
+      <div class="stat"><div class="n grad-txt">1</div><div class="l">Funnel away from scale</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- The gap -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">The opportunity</div>
+    <h2 class="serif">The ceiling is the <span class="grad-txt">business model,</span> not the audience.</h2>
+    <p class="lead" style="max-width:60ch">Your reach is huge and your content works. The limit is that every bit of it points at one offer, 1:1 coaching, which you can only sell as many hours as you have. The girls who cannot afford 1:1, or are not ready for it, have nowhere to go. That is the leak.</p>
+    <div class="split">
+      <div class="gap-card now rv">
+        <div class="lbl"><iconify-icon icon="mdi:circle-outline"></iconify-icon> Today</div>
+        <ul>
+          <li><iconify-icon icon="mdi:minus"></iconify-icon> All traffic funnels into 1:1 coaching</li>
+          <li><iconify-icon icon="mdi:minus"></iconify-icon> Income capped by your available hours</li>
+          <li><iconify-icon icon="mdi:minus"></iconify-icon> The 95% who won't buy 1:1 slip away</li>
+          <li><iconify-icon icon="mdi:minus"></iconify-icon> Nothing captures or nurtures the audience</li>
+        </ul>
+      </div>
+      <div class="gap-card next rv">
+        <div class="lbl"><iconify-icon icon="mdi:star-four-points"></iconify-icon> With a funnel + scalable offer</div>
+        <ul>
+          <li><iconify-icon icon="mdi:check"></iconify-icon> A free offer captures the whole audience</li>
+          <li><iconify-icon icon="mdi:check"></iconify-icon> A scalable program sells without your calendar</li>
+          <li><iconify-icon icon="mdi:check"></iconify-icon> 1:1 becomes the premium tier at the top</li>
+          <li><iconify-icon icon="mdi:check"></iconify-icon> Revenue that grows with reach, not hours</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Money picture -->
+<section class="money">
+  <div class="wrap">
+    <div class="eyebrow">The money picture</div>
+    <h2 class="serif">Same audience. <span class="grad-txt">Far more captured.</span></h2>
+    <p class="lead" style="max-width:60ch">The point of a funnel is simple: monetise the people who will never buy your top offer. Even a small slice of your reach, converted into a scalable program, changes the shape of the business.</p>
+    <div class="math rv">
+      <div class="row"><div class="ic"><iconify-icon icon="mdi:account-group-outline"></iconify-icon></div><div><b>A 219K+ audience across three platforms</b><span>Warm, engaged, already trusts you</span></div><div class="val">The reach</div></div>
+      <div class="row"><div class="ic"><iconify-icon icon="mdi:magnet-on"></iconify-icon></div><div><b>A free offer captures a share of it to email</b><span>You own the audience, not the algorithm</span></div><div class="val">The list</div></div>
+      <div class="row"><div class="ic"><iconify-icon icon="mdi:rocket-launch-outline"></iconify-icon></div><div><b>A scalable program converts a fraction of that list</b><span>Priced below 1:1, sold on autopilot</span></div><div class="val">The engine</div></div>
+      <div class="row"><div class="ic"><iconify-icon icon="mdi:crown-outline"></iconify-icon></div><div><b>1:1 sits on top as the premium tier</b><span>Same coaching, now the peak of a ladder</span></div><div class="val">The margin</div></div>
+    </div>
+    <p class="disclaim-inline">Illustrative of how the model works, not a specific revenue projection. The real numbers depend on your audience, offer and pricing, which we set together.</p>
+  </div>
+</section>
+
+<!-- Funnel plan -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">The funnel, mapped</div>
+    <h2 class="serif">How the whole thing <span class="grad-txt">runs itself.</span></h2>
+    <p class="lead" style="max-width:60ch">Built once, then evergreen. Your content keeps doing what it already does, and the funnel does the capturing and selling behind it.</p>
+    <div class="flow">
+      <div class="fstep rv"><div class="ic"><iconify-icon icon="mdi:play-circle-outline"></iconify-icon></div><b>1. Content</b><p>Your reels and posts, working exactly as they do now.</p></div>
+      <div class="fstep rv"><div class="ic"><iconify-icon icon="mdi:magnet-on"></iconify-icon></div><b>2. Free offer</b><p>A guide or challenge that captures emails from the whole audience.</p></div>
+      <div class="fstep rv"><div class="ic"><iconify-icon icon="mdi:email-fast-outline"></iconify-icon></div><b>3. Nurture</b><p>An email flow that builds trust and makes the offer.</p></div>
+      <div class="fstep rv"><div class="ic"><iconify-icon icon="mdi:school-outline"></iconify-icon></div><b>4. Scalable offer</b><p>A program that sells on repeat, with 1:1 as the premium tier.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- What we build -->
+<section style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow">What I'd build</div>
+    <h2 class="serif">Done for you, <span class="grad-txt">end to end.</span></h2>
+    <div class="build">
+      <div class="bcard rv"><iconify-icon icon="mdi:magnet-on"></iconify-icon><h3>Lead magnet + opt-in</h3><p>The free offer and page that captures your audience to email. A live sample is linked below.</p></div>
+      <div class="bcard rv"><iconify-icon icon="mdi:email-multiple-outline"></iconify-icon><h3>Email nurture + sales flow</h3><p>The sequences that turn a new subscriber into a buyer, on autopilot.</p></div>
+      <div class="bcard rv"><iconify-icon icon="mdi:cube-outline"></iconify-icon><h3>The scalable offer</h3><p>A program built from your method, positioned and priced to sell at volume.</p></div>
+      <div class="bcard rv"><iconify-icon icon="mdi:cart-outline"></iconify-icon><h3>Sales page + checkout</h3><p>The page that sells the program, with the tech wired end to end.</p></div>
+      <div class="bcard rv"><iconify-icon icon="mdi:cog-sync-outline"></iconify-icon><h3>Automation + tracking</h3><p>Everything connected and measured, so you can see what converts.</p></div>
+      <div class="bcard rv"><iconify-icon icon="mdi:refresh-auto"></iconify-icon><h3>Evergreen + launches</h3><p>Runs quietly in the background, with launch pushes on top when you want them.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Landing preview -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">A live sample</div>
+    <h2 class="serif">Not a mockup. <span class="grad-txt">A working page.</span></h2>
+    <div class="preview rv">
+      <div class="frame">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="body">
+          <div class="h">Walk into the gym like you own it.</div>
+          <div class="s">The free starter guide for girls, your first confident workouts.</div>
+          <span class="btn-m">Send me the guide</span>
+          <div class="ln"></div><div class="ln s"></div>
+        </div>
+      </div>
+      <div>
+        <h3>The front of your funnel, built and live.</h3>
+        <p>I built the opt-in page a girl would land on, in your brand and voice, so this is not theory. Open it, test the form, see the flow.</p>
+        <a href="index.html" class="btn" style="margin-top:6px">Open the live page <iconify-icon icon="mdi:arrow-top-right"></iconify-icon></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow">How we'd work</div>
+    <h2 class="serif">One operator, <span class="grad-txt">the whole build.</span></h2>
+    <div class="steps">
+      <div class="pstep rv"><div class="n">01</div><h3>Map</h3><p>We lock your offer, funnel and pricing to your audience on a quick call.</p></div>
+      <div class="pstep rv"><div class="n">02</div><h3>Build</h3><p>I build the funnel, offer, pages and automations, end to end.</p></div>
+      <div class="pstep rv"><div class="n">03</div><h3>Launch</h3><p>We go live, capture your audience, and start selling the scalable offer.</p></div>
+      <div class="pstep rv"><div class="n">04</div><h3>Scale</h3><p>Optimise what converts and add launches on top of the evergreen base.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div class="eyebrow cen">Everything here was built for you</div>
+    <h2 class="serif">Want to see what this looks like <span class="grad-txt">for your numbers?</span></h2>
+    <p>A quick call to walk your funnel, lock the offer and pricing to your audience, and map the first build. No pitch, no pressure.</p>
+    <a href="https://calendly.com/ag-copy/call-with-andrei" class="btn">Book a 15-minute call <iconify-icon icon="mdi:arrow-right"></iconify-icon></a>
+    <p style="color:var(--faint);font-size:.85rem;margin-top:16px">Or just reply to the DM. Whatever's easier.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <span class="logo"><span class="mk">AG</span> AG1 Consulting</span>
+      <span>Built for Michelle Kwon &middot; &copy; 2026 AG1</span>
+    </div>
+  </div>
+  <div class="disclaimer">
+    This plan is a custom proposal for discussion, not a finished offer or a guarantee of results. Funnel structure, offer and pricing depend on your audience and market testing, and revenue outcomes vary from person to person. Any figures shown are illustrative of the model, not a promise of a specific result. Final structure and pricing to be set together.
+  </div>
+</footer>
+
+<script>
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+</script>
+<script>window.AG_LEAD='michelle-kwon';</script>
+<script src="https://andrei170.github.io/ag1-services/tracker.js?v=2"></script>
+</body>
+</html>
