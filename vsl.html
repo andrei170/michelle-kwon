@@ -18,12 +18,12 @@
 <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 <style>
   :root{
-    --ink:#2b2230; --ink2:#443548; --paper:#faf5f3; --sand:#f4e9e7; --sand2:#ecd9d6;
-    --card:#ffffff; --accent:#c47d84; --accent2:#a5606a; --gold:#d9a7a0; --gold-soft:#eccbc4;
+    --ink:#332a27; --ink2:#4a3c37; --paper:#f8f3ec; --sand:#f0e6da; --sand2:#e7d9c9;
+    --card:#ffffff; --accent:#c0897e; --accent2:#a56a5f; --gold:#cfa88c; --gold-soft:#e6cbb4;
     --good:#5a8a6f;
-    --line:#ecdcd9; --muted:#6d5f66; --muted2:#9a8b90;
-    --sh1:0 1px 2px rgba(43,34,48,.05),0 4px 12px rgba(43,34,48,.07);
-    --sh2:0 4px 10px rgba(43,34,48,.06),0 18px 44px rgba(43,34,48,.14);
+    --line:#ece1d3; --muted:#6f625a; --muted2:#9a8b7f;
+    --sh1:0 1px 2px rgba(51,42,39,.05),0 4px 12px rgba(51,42,39,.07);
+    --sh2:0 4px 10px rgba(51,42,39,.06),0 18px 44px rgba(51,42,39,.14);
     --sh3:0 8px 20px rgba(43,34,48,.12),0 40px 90px rgba(43,34,48,.24);
     --ease:cubic-bezier(.2,.7,.2,1);
     --r-sm:11px;
@@ -75,7 +75,7 @@
   /* Video */
   .video-wrap{max-width:860px;margin:34px auto 0;padding:0 26px}
   .player{position:relative;aspect-ratio:16/9;border-radius:20px;overflow:hidden;box-shadow:var(--sh3);border:1px solid var(--line);background:linear-gradient(150deg,#3a2d40,#241b29);cursor:pointer}
-  .player .poster{position:absolute;inset:0;background:linear-gradient(150deg,rgba(58,45,64,.86),rgba(36,27,41,.9)),url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1400&auto=format&fit=crop') center/cover}
+  .player .poster{position:absolute;inset:0;background:linear-gradient(150deg,rgba(43,34,48,.5),rgba(36,27,41,.68)),url('michelle-gym.jpg') center 20%/cover}
   .player .play{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;z-index:2}
   .player .play .circle{width:88px;height:88px;border-radius:50%;background:var(--accent);display:grid;place-items:center;font-size:2.4rem;box-shadow:0 14px 40px rgba(196,125,132,.5);transition:.25s}
   .player:hover .play .circle{transform:scale(1.06);background:var(--accent2)}
@@ -136,7 +136,7 @@
   .faq-a p{padding:0 0 20px;color:var(--muted);margin:0}
 
   /* Final CTA */
-  .final{position:relative;overflow:hidden;color:#fff;text-align:center;background:linear-gradient(160deg,#332639,#211926)}
+  .final{position:relative;overflow:hidden;color:#fff;text-align:center;background:linear-gradient(160deg,#3a2f27,#241d17)}
   .final::before{content:"";position:absolute;right:-140px;top:-120px;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(217,167,160,.24),transparent 65%)}
   .final .wrap{position:relative;z-index:2}
   .final h2{color:#fff;max-width:20ch;margin:0 auto}
@@ -145,7 +145,7 @@
   .final .btn{background:#fff;color:var(--ink)}
   .final .btn:hover{background:var(--sand)}
 
-  footer{background:#221a27;color:#a89aa0;padding:40px 0 26px;font-size:.9rem}
+  footer{background:#241d17;color:#ab9d92;padding:40px 0 26px;font-size:.9rem}
   .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
   .foot .brand .nm{color:#fff}
   .disclaimer{max-width:1120px;margin:16px auto 0;padding:0 26px;font-size:.73rem;color:#6d6066;line-height:1.6}
@@ -274,7 +274,7 @@
 <section class="about">
   <div class="wrap-wide">
     <div class="rv" style="aspect-ratio:4/5;border-radius:20px;overflow:hidden;box-shadow:var(--sh2)">
-      <img src="michelle.png" alt="Michelle Kwon, fitness coach" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block">
+      <img src="michelle-portrait.jpg" alt="Michelle Kwon, fitness coach" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:center 18%;display:block">
     </div>
     <div>
       <div class="eyebrow">Meet your coach</div>
@@ -297,13 +297,12 @@
     <div class="cen">
       <div class="eyebrow cen">Real moments</div>
       <h2>A little look <em>at the vibe.</em></h2>
-      <p class="lead" style="margin:14px auto 0;max-width:52ch">Drop in real photos of Michelle training, coaching and with her community.</p>
+      <p class="lead" style="margin:14px auto 0;max-width:52ch">Training, coaching and everyday, the real Michelle behind the coaching.</p>
     </div>
-    <div class="gallery">
-      <div class="gslot rv"><iconify-icon icon="mdi:image-outline"></iconify-icon> Training photo</div>
-      <div class="gslot rv"><iconify-icon icon="mdi:image-outline"></iconify-icon> Coaching a client</div>
-      <div class="gslot rv"><iconify-icon icon="mdi:image-outline"></iconify-icon> Community / lifestyle</div>
-      <div class="gslot rv"><iconify-icon icon="mdi:image-outline"></iconify-icon> Michelle portrait</div>
+    <div class="gallery" style="grid-template-columns:repeat(3,1fr)">
+      <img class="rv" src="michelle-portrait.jpg" alt="Michelle Kwon" loading="lazy" decoding="async" style="width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 15%;border-radius:14px;box-shadow:var(--sh1)">
+      <img class="rv" src="michelle-gym.jpg" alt="Michelle training in the gym" loading="lazy" decoding="async" style="width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 24%;border-radius:14px;box-shadow:var(--sh1)">
+      <img class="rv" src="michelle.png" alt="Michelle Kwon" loading="lazy" decoding="async" style="width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 20%;border-radius:14px;box-shadow:var(--sh1)">
     </div>
   </div>
 </section>
